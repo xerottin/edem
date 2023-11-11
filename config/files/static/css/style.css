@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.header{
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-start{
+    padding-top: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 300px;
+    height: 150px;
+}
+.head-contacts{
+    display: flex;
+    padding-top: 40px;
+}
+.call{
+    padding-top: 15px;
+    width: 50px;
+    height: 40px;
+}
+.navbar{
+    margin-top: -30px;
+}
+.nav-button{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+/*card*/
+.card{
+    width: 420px;
+    height: 550px;
+}
+
+.arrow{
+
+    width: 40px;
+    height: 30px;
+}
+
+
+
+
+.columns-footer {
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+    justify-content: space-around;
+}
+
+.column-footer {
+    display: flex;
+    width: 25%;
+    height: auto;
+}
+
+
+
+.niz {
+    margin: 10px 0;
+    height: 100px;
+    background-color: white;
+}
+
+
+.columns-niz {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.column-niz {
+    display: flex;
+}
+
+
+/*carousel-start*/
+
+.d-bloc{
+    margin-left: 350px;
+    display: flex;
+    width: 50%;
+    height: 400px;
+}
+
+
+.carousel-inner{
+    padding-top: -50px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    outline: #00b89c;
+    border-radius: 50%;
+    border: 5px solid #00b89c;
+
+}
+
+
+/*carousel-end*/
+
+
+
+/* coment */
+.columns-comment{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    width: auto;
+
+}
+
+.card-comment{
+    margin-top: 70px;
+    height: 250px;
+    width: 30%;
+    box-shadow: 10px 10px lightblue;
+
+}
+.card-h6{
+    font-size: 30px;
+    font-weight: 500;
+}
+.card-p{
+    /*font-size: 25px;*/
+    font-weight: 400;
+}
+
+/* service */
+.columns-service{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 50px 0 40px;
+}
+.column-service{
+    width: 33%;
+    height: 300px;
+}
+
+.service-img{
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
