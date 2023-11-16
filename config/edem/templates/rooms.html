@@ -1,2 +1,10 @@
 {% extends 'base_layout.html' %}
-<div class="h1">Standart room</div>
+{% load static %}
+{% block content %}
+    <div class="h1">heloo</div>
+    {% for items in room %}
+        <div class="h1">{{ title }}</div>
+        <div class="p">{{ description }}</div>
+        <div class="p">{{ price }}</div>
+    {% endfor %}
+{% endblock %}

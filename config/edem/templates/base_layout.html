@@ -21,24 +21,25 @@
                                      alt="">SEARCH
             </div>
         </div>
-        <div class="logo"><a href="#"><img src="{% static 'img/icons/logopaint.png' %}" alt="logo"></a></div>
+        <div style="margin-left: 120px" class="logo"><a href="#"><img src="{% static 'img/icons/logopaint.png' %}" alt="logo"></a></div>
         <div class="head-end">
             <div class="head-contacts">
                 <img src="{% static 'img/icons/call-outline.svg' %}" class="call" alt="">
                 <div class="contacts">
                     <p>Contact-us</p>
-                    <div class="" style="margin-top: -18px">
+                    <div class="" style="margin: -18px 20px 0 0">
                         <p>+999999999999</p>
                     </div>
                 </div>
+                <div class="button is-black is-outlined is-size-5">Booking</div>
             </div>
         </div>
     </div>
-    <nav class="navbar has-background-white-bis is-justify-content-space-around">
-        <div class="nav-button is-size-5"><strong><a href="#section1" class="has-text-black">Home</a></strong></div>
-        <div class="nav-button is-size-5"><strong><a href="#section2" class="has-text-black">About</a></strong></div>
-        <div class="nav-button is-size-5"><strong><a href="#section2" class="has-text-black">Rooms</a></strong></div>
-        <div class="nav-button is-size-5"><strong><a href="#section3" class="has-text-black">Service</a></strong></div>
+    <nav style="text-decoration: none" class="navbar has-background-white-bis is-justify-content-space-around">
+        <div class="nav-button is-size-5"><strong><a href="" class="has-text-black">Home</a></strong></div>
+        <div class="nav-button is-size-5"><strong><a href="" class="has-text-black">About</a></strong></div>
+        <div class="nav-button is-size-5"><strong><a href="{% url 'edem:rooms' %}" class="has-text-black">Rooms</a></strong></div>
+        <div class="nav-button is-size-5"><strong><a href="" class="has-text-black">Service</a></strong></div>
         <div class="nav-button is-size-5"><strong><a href="" class="has-text-black">Contact-us</a></strong></div>
     </nav>
 </section>
@@ -99,7 +100,7 @@
                 doloribus.</p>
         </div>
         <div class="column-niz">
-            <img src="{% static 'img/icons/image_2023-09-02_11-32-10.png' %}" style="height: 50px;width: 100px;"
+            <img src="{% static 'img/icons/logo-removebg-preview.png' %}" style="height: 100px;width: 200px; margin-bottom: 20px"
                  alt="">
         </div>
     </div>
