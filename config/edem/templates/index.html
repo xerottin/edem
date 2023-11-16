@@ -4,7 +4,7 @@
 
     <!-- information -->
     <img src="{% static 'img/icons/main4.jpg' %}" alt="EDEM">
-    <section class="section" data-section="section1">
+    <section class="section" id="top" data-section="#">
         <div class="is-size-3 has-text-centered">Welcome to Bukhara</div>
         <h1 class="has-text-centered"><strong style="color: #987d49">HOTEL EDEM PLAZA</strong></h1>
         <div class="p has-text-centered has-text-black is-size-4">Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -17,14 +17,15 @@
     <!-- end-informatiion -->
 
     <!-- card-rooms -->
-    <section class="section" data-section="section2">
+    <section class="section" data-section="#">
         <div class="columns is-justify-content-space-around">
 
 
             <div class="card has-background-white-bis mx-2">
                 <div class="card-image">
                     <figure class="image">
-                        <img class="img-card" style="width: 420px; height: 300px;" src="{% static 'img/rooms/semi-luxe-1.jpg' %}" alt="Placeholder image">
+                        <img class="img-card" style="width: 420px; height: 300px;"
+                             src="{% static 'img/rooms/semi-luxe-1.jpg' %}" alt="Placeholder image">
                     </figure>
                 </div>
                 <div class="card-content">
@@ -35,7 +36,7 @@
                                 up in the laboratory
                             </strong>
                         </p>
-                        <p class="subtitle is-size-5  mt-3">
+                        <p class="subtitle is-size-5">
                             In this case, the role of the health laboratory is very important to do
                             a disease detection...
                         </p>
@@ -46,12 +47,12 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="card has-background-white-bis mx-2">
                 <div class="card-image">
                     <figure class="image">
-                        <img class="img-card" src="{% static 'img/rooms/semi-luxe-1.jpg' %}" alt="Placeholder image">
+                        <img class="img-card" style="width: 420px; height: 300px;"
+                             src="{% static 'img/rooms/semi-luxe-1.jpg' %}" alt="Placeholder image">
                     </figure>
                 </div>
                 <div class="card-content">
@@ -62,11 +63,10 @@
                                 up in the laboratory
                             </strong>
                         </p>
-                        <p class="subtitle is-size-6">
+                        <p class="subtitle is-size-5">
                             In this case, the role of the health laboratory is very important to do
                             a disease detection...
                         </p>
-                        <br>
                         <button class="button is-rounded is-outlined is-dark">
                             read more<img style="padding-left: 10px" class="arrow has-text-success"
                                           src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}" alt="->">
@@ -74,12 +74,12 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="card has-background-white-bis mx-2">
                 <div class="card-image">
                     <figure class="image">
-                        <img class="img-card" src="{% static 'img/rooms/semi-luxe-1.jpg' %}" alt="Placeholder image">
+                        <img class="img-card" style="width: 420px; height: 300px;"
+                             src="{% static 'img/rooms/semi-luxe-1.jpg' %}" alt="Placeholder image">
                     </figure>
                 </div>
                 <div class="card-content">
@@ -90,11 +90,10 @@
                                 up in the laboratory
                             </strong>
                         </p>
-                        <p class="subtitle is-size-6">
+                        <p class="subtitle is-size-5">
                             In this case, the role of the health laboratory is very important to do
                             a disease detection...
                         </p>
-                        <br>
                         <button class="button is-rounded is-outlined is-dark">
                             read more<img style="padding-left: 10px" class="arrow has-text-success"
                                           src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}" alt="->">
@@ -102,65 +101,12 @@
                     </div>
                 </div>
             </div>
-            {#            <div class="card has-background-white-bis mx-2">#}
-            {#                <div class="card-image">#}
-            {#                    <figure class="image">#}
-            {#                        <img class="img-card" src="{% static 'img/rooms/semi-luxe-2.jpg' %}" alt="Placeholder image">#}
-            {#                    </figure>#}
-            {#                </div>#}
-            {#                <div class="card-content">#}
-            {#                    <div class="content">#}
-            {#                        <p class="title is-size-4">#}
-            {#                            <strong>#}
-            {#                                Disease detection, check#}
-            {#                                up in the laboratory#}
-            {#                            </strong>#}
-            {#                        </p>#}
-            {#                        <p class="subtitle is-size-6">#}
-            {#                            In this case, the role of the health laboratory is very important to do#}
-            {#                            a disease detection...#}
-            {#                        </p>#}
-            {#                        <br>#}
-            {#                        <button class="button is-rounded is-outlined is-dark">#}
-            {#                            read more <img style="padding-left: 10px" class="arrow"#}
-            {#                                           src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}" alt="->">#}
-            {#                        </button>#}
-            {#                    </div>#}
-            {#                </div>#}
-            {#            </div>#}
-            {#            <div class="card has-background-white-bis mx-2">#}
-            {#                <div class="card-image">#}
-            {#                    <figure class="image">#}
-            {#                        <img class="img-card" src="{% static 'img/rooms/luxe-1.jpg' %}" alt="Placeholder image">#}
-            {#                    </figure>#}
-            {#                </div>#}
-            {#                <div class="card-content">#}
-            {#                    <div class="content">#}
-            {#                        <p class="title is-size-4">#}
-            {#                            <strong>#}
-            {#                                Disease detection, check#}
-            {#                                up in the laboratory#}
-            {#                            </strong>#}
-            {#                        </p>#}
-            {#                        <p class="subtitle is-size-6">#}
-            {#                            In this case, the role of the health laboratory is very important to do#}
-            {#                            a disease detection...#}
-            {#                        </p>#}
-            {#                        <br>#}
-            {#                        <br>#}
-            {#                        <button class="button is-rounded is-outlined is-dark">#}
-            {#                            read more <img style="padding-left: 10px" class="arrow"#}
-            {#                                           src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}" alt="->">#}
-            {#                        </button>#}
-            {#                    </div>#}
-            {#                </div>#}
-            {#            </div>#}
         </div>
     </section>
     <!-- end-card-room -->
 
     <!-- service -->
-    <section class="section" data-section="section3">
+   <section class="section" data-section="#">
         <div class="h2 has-text-centered">Services</div>
         <div class="columns-service has-text-centered">
             <div class="column-service">
@@ -215,7 +161,7 @@
     <!--carousel-end-->
 
     <!-- comments -->
-    <section class="section" data-section="section4">
+    <section class="section" data-section="#">
         <div class="h1 has-text-centered mb-5" style="margin-bottom: -30px;"><strong>Reviews from guests</strong></div>
         <div class="columns-comment mx-5">
             <div class="card-comment mx-3">
@@ -268,64 +214,5 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
 
-
-    <!-- map -->
-    <section data-section="section5">
-        <div class="map" style="margin-bottom: -5px">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391.13252974047253!2d64.4309567463635!3d39.7728837630255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f500607f10f60c3%3A0x4cff0a6c9cf2caae!2sEDEM%20PLAZA!5e0!3m2!1sru!2s!4v1697896822718!5m2!1sru!2s"
-                    width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-    <!-- map-end -->
-
-    <!-- footer-start -->
-    <div class="footer" style="padding: 30px 0 10px;">
-        <h3 class="title is-size-4" style="padding-left: 70px">Contact-us</h3>
-        <div class="columns-footer">
-            <div class="column-footer">
-                <img style="width: 30px;height: 30px;" src="{% static 'img/icons/navigate-circle-outline.svg' %}"
-                     alt="">
-                <p class="p footer-text is-size-5">Bukhara \n Bovadin str. </p>
-            </div>
-            <div class="column-footer">
-                <img src="{% static 'img/icons/call-outline.svg' %}" style="width: 30px; height: 30px;" alt="">
-                <p class="p is-size-5"><strong>+999999999999</strong></p>
-            </div>
-            <div class="column-footer">
-                <img src="{% static 'img/icons/chatbox-outline.svg' %}" style="width: 30px;height: 30px;" alt="">
-                <p class="p is-size-5">edemplaza@mail.com</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="niz">
-        <div class="columns-niz">
-            <div class="column-niz">
-                <img src="{% static 'img/icons/business-outline.svg' %}"
-                     style="width: 50px;height: 50px; padding-right: 14px;" alt="">
-                <div class="">
-                    <h2 style="color: black">HOTEL EDEM PLAZA</h2>
-                    <p style="color: black">2023, official web-site</p>
-                </div>
-            </div>
-            <div class="column-niz-inst">
-                <a href=""><img src="{% static 'img/icons/logo-facebook.svg' %}" style="width: 30px;height: 30px;"
-                                alt=""></a>
-                <a href=""><img src="{% static 'img/icons/logo-instagram.svg' %}" style="width: 30px;height: 30px;"
-                                alt=""></a>
-            </div>
-            <div class="column-niz">
-                <img src="{% static 'img/icons/pin-outline.svg' %}" alt="">
-                <p style="font-size: 20px; color: #000000">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,
-                    doloribus.</p>
-            </div>
-            <div class="column-niz">
-                <img src="{% static 'img/icons/image_2023-09-02_11-32-10.png' %}" style="height: 50px;width: 100px;"
-                     alt="">
-            </div>
-        </div>
-    </div>
-    <!-- footer-end -->
 
 {% endblock %}

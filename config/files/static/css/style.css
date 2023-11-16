@@ -5,51 +5,57 @@
     list-style: none;
     box-sizing: border-box;
 }
-.header{
+
+.header {
     padding: 0 50px;
     display: flex;
     justify-content: space-between;
 }
-.header-start{
+
+.header-start {
     padding-top: 40px;
     width: 150px;
     display: flex;
     justify-content: space-between;
 }
-.logo{
+
+.logo {
     width: 300px;
     height: 150px;
 }
-.head-contacts{
+
+.head-contacts {
     display: flex;
     padding-top: 40px;
 }
-.call{
+
+.call {
     padding-top: 15px;
     width: 50px;
     height: 40px;
 }
-.navbar{
+
+.navbar {
     margin-top: -30px;
 }
-.nav-button{
+
+.nav-button {
     text-align: center;
     color: white;
     padding-top: 10px;
 }
+
 /*card*/
-.card{
+.card {
     width: 420px;
     height: 550px;
 }
 
-.arrow{
+.arrow {
 
     width: 40px;
     height: 30px;
 }
-
-
 
 
 .columns-footer {
@@ -64,7 +70,6 @@
     width: 25%;
     height: auto;
 }
-
 
 
 .niz {
@@ -87,7 +92,7 @@
 
 /*carousel-start*/
 
-.d-bloc{
+.d-bloc {
     margin-left: 350px;
     display: flex;
     width: 50%;
@@ -95,7 +100,7 @@
 }
 
 
-.carousel-inner{
+.carousel-inner {
     padding-top: -50px;
 }
 
@@ -110,9 +115,8 @@
 /*carousel-end*/
 
 
-
 /* coment */
-.columns-comment{
+.columns-comment {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -121,36 +125,39 @@
 
 }
 
-.card-comment{
+.card-comment {
     margin-top: 70px;
     height: 250px;
     width: 30%;
     box-shadow: 10px 10px lightblue;
 
 }
-.card-h6{
+
+.card-h6 {
     font-size: 30px;
     font-weight: 500;
 }
-.card-p{
+
+.card-p {
     /*font-size: 25px;*/
     font-weight: 400;
 }
 
 /* service */
-.columns-service{
+.columns-service {
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
     width: auto;
     padding: 50px 0 40px;
 }
-.column-service{
+
+.column-service {
     width: 33%;
     height: 300px;
 }
 
-.service-img{
+.service-img {
     padding-bottom: 20px;
 }
 
