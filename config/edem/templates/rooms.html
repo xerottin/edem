@@ -1,78 +1,71 @@
 {% extends 'base_layout.html' %}
-{% load static %}
+{% load static from static %}
 {% block content %}
 
-
-    <div class="section-room">
-        <div class="room-title"><strong>Standart-room</strong></div>
-        <div class="photos-of-room">
-            <img src="{% static 'img/standart/photo_3_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
-            <img src="{% static 'img/standart/photo_4_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
-            <img src="{% static 'img/standart/photo_6_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
-            <img src="{% static 'img/standart/photo_1_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
-            <img src="{% static 'img/icons/logo-removebg-preview.png' %}" class="p-room room-1"></img>
-            <img src="{% static 'img/standart/photo_2_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
-            <img src="{% static 'img/standart/photo_2_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
-            <img src="{% static 'img/standart/photo_2_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
-            <img src="{% static 'img/standart/photo_2_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
-        </div>
-        <div class="room-h1">Информация о номере</div>
-        <div class="uslugi">
-            <div class="main-room">
-                <div class="h3">Комната</div>
-                <div class="li">⚫️Две односпальнык кровати</div>
-                <div class="li">⚫️50м2</div>
-                <div class="li">⚫️Шкаф</div>
-                <div class="li">⚫️телевизор с плоским экраном</div>
-                <div class="li">⚫️кабельное телевидение</div>
-                <div class="li">⚫️️Тумбочки</div>
-                <div class="li">⚫️мини-холодилник</div>
-                <div class="li">⚫️Письменный стол</div>
-                <div class="li">⚫️Багажная тумба</div>
+        <div class="section-room">
+            <div class="room-title"><strong>{{ course.title }}</strong></div>
+            <div class="photos-of-room">
+                <img src="{% static 'img/standart/photo_3_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
+                <img src="{% static 'img/standart/photo_4_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
+                <img src="{% static 'img/standart/photo_6_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
+                <img src="{% static 'img/standart/photo_1_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
+                <img src="{% static 'img/icons/logo-removebg-preview.png' %}" class="p-room room-1"></img>
+                <img src="{% static 'img/standart/photo_2_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
+                <img src="{% static 'img/standart/photo_2_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
+                <img src="{% static 'img/standart/photo_2_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
+                <img src="{% static 'img/standart/photo_2_2023-11-20_13-35-34.jpg' %}" alt="" class="room-1">
             </div>
-            <div class="main-room">
-                <br>
-                <div class="li">⚫️Стул</div>
-                <div class="li">⚫️wifi</div>
-                <div class="li">⚫️Вешалки</div>
-                <div class="li">⚫️намазник</div>
-                <div class="li">⚫️Светильник</div>
-                <div class="li">⚫️Отопление</div>
-                <div class="li">⚫️Термоз</div>
-                <div class="li">⚫️Высокие потолок</div>
-                <div class="li">⚫️Питьевая вода</div>
-                <div class="li">⚫Стакан</div>
-            </div>
-            <div class="bathroom">
-                <div class="h3">Ванна
-                    <div class="li">⚫️Ванная или душевая кабина</div>
-                    <div class="li">⚫️Туалетная средства</div>
-                    <div class="li">⚫️Банные полотенцы</div>
-                    <div class="li">⚫️банные принадлежности</div>
-                    <div class="li">⚫️Унитаз</div>
-                    <div class="li">⚫️Фен</div>
-                    <div class="li">⚫️Халат</div>
-                    <div class="li">⚫️Тапочки</div>
-                    <div class="li">⚫️Косметические средства</div>
-                    <div class="li">⚫Зеркало</div>
-                    <div class="li">⚫Светильник</div>
-                    <div class="li">⚫фен</div>
+            <div class="room-h1">Информация о номере</div>
+            <div class="uslugi">
+                <div class="main-room">
+                    <div class="h3">Комната</div>
+                    <div class="li">⚫️Две односпальнык кровати</div>
+                    <div class="li">⚫️50м2</div>
+                    <div class="li">⚫️Шкаф</div>
+                    <div class="li">⚫️телевизор с плоским экраном</div>
+                    <div class="li">⚫️кабельное телевидение</div>
+                    <div class="li">⚫️️Тумбочки</div>
+                    <div class="li">⚫️мини-холодилник</div>
+                    <div class="li">⚫️Письменный стол</div>
+                    <div class="li">⚫️Багажная тумба</div>
+                </div>
+                <div class="main-room">
+                    <br>
+                    <div class="li">⚫️Стул</div>
+                    <div class="li">⚫️wifi</div>
+                    <div class="li">⚫️Вешалки</div>
+                    <div class="li">⚫️намазник</div>
+                    <div class="li">⚫️Светильник</div>
+                    <div class="li">⚫️Отопление</div>
+                    <div class="li">⚫️Термоз</div>
+                    <div class="li">⚫️Высокие потолок</div>
+                    <div class="li">⚫️Питьевая вода</div>
+                    <div class="li">⚫Стакан</div>
+                </div>
+                <div class="bathroom">
+                    <div class="h3">Ванна
+                        <div class="li">⚫️Ванная или душевая кабина</div>
+                        <div class="li">⚫️Туалетная средства</div>
+                        <div class="li">⚫️Банные полотенцы</div>
+                        <div class="li">⚫️банные принадлежности</div>
+                        <div class="li">⚫️Унитаз</div>
+                        <div class="li">⚫️Фен</div>
+                        <div class="li">⚫️Халат</div>
+                        <div class="li">⚫️Тапочки</div>
+                        <div class="li">⚫️Косметические средства</div>
+                        <div class="li">⚫Зеркало</div>
+                        <div class="li">⚫Светильник</div>
+                        <div class="li">⚫фен</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        <div class="room-p">В номерах "стандарт" наших гостей ждут две одноcпальные кровати или одна большая двуспальная
-            кровать
-            с ортопедическими матрасами, качественным белым постельным бельем, одеялами и подушками. К Вашим услугам
-            современный LCD-телевизор. Комфортный микроклимат поможет поддерживать кондиционер. Санузел оснащен ванной ,
-            полотенцами, феном, а также необходимой сантехникой и дозатором наполненным мылом для мытья рук.
-            Если вы захотите выпить утреннюю чашку чая или кофе, не выходя из номера или угостить ароматным напитком
-            своих
-            друзей – в Вашем распоряжении электро чайник с необходимым набором посуды и приборов. Дополнительные
-            предметы
-            сервировки предоставляется в Ваш номер по первому требованию.
-            <div class="" style="margin-top: 20px">цена: <strong>300 000</strong> сумм</div>
+            <div class="room-p">
+                {{ course.description }}
+                <div class="" style="margin-top: 20px">цена: <strong>{{ course.price_uz }}</strong> сумм</div>
+                <div class="" style="margin-top: 20px">цена: <strong>{{ course.price_eu }}</strong> сумм</div>
+            </div>
         </div>
-    </div>
+
 {% endblock %}

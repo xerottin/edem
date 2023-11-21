@@ -1,15 +1,17 @@
-from django.shortcuts import render, get_object_or_404
-
-from edem.models import Rooms
+from django.shortcuts import render
+from .models import Course
 
 
 # Create your views here.
 def index(request):
-    room = get_object_or_404(Rooms)
+    courses = Course.objects.all()
     return render(request, 'index.html', {
-        rooms: 'rooms',
+        'courses': courses,
     })
 
 
-def rooms(request):
-    return render(request, 'rooms.html')
+def rooms(request, pk):
+    course = Course.objects.get(pk=pk)
+    return render(request, 'rooms.html', {
+        'course': course,
+    })

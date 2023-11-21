@@ -20,93 +20,43 @@
     <section class="section" data-section="#">
         <div class="columns is-justify-content-space-around">
 
+            {% for course in courses %}
+                <div class="card has-background-white-bis mx-2">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img class="img-card" style="width: 420px; height: 300px;"
+                                 src="{% static 'img/rooms/semi-luxe-1.jpg' %}" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="title is-size-4">
+                                <strong>
+                                    {{ course.title }}
+                                </strong>
+                            </p>
+                            <p class="subtitle is-size-5">
+                                {{ course.description }}
+                            </p>
+                            <button class="button is-rounded is-outlined is-dark"><a
+                                    href="{% url 'edem:rooms' course.pk %}">
 
-            <div class="card has-background-white-bis mx-2">
-                <div class="card-image">
-                    <figure class="image">
-                        <img class="img-card" style="width: 420px; height: 300px;"
-                             src="{% static 'img/rooms/semi-luxe-1.jpg' %}" alt="Placeholder image">
-                    </figure>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <p class="title is-size-4">
-                            <strong>
-                                Disease detection, check
-                                up in the laboratory
-                            </strong>
-                        </p>
-                        <p class="subtitle is-size-5">
-                            In this case, the role of the health laboratory is very important to do
-                            a disease detection...
-                        </p>
-                        <button class="button is-rounded is-outlined is-dark">
-                            read more<img style="padding-left: 10px" class="arrow has-text-success"
-                                          src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}" alt="->">
-                        </button>
+                                read more<img style="padding-left: 10px" class="arrow has-text-success"
+                                                  src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}"
+                                                  alt="->">
+                            </a>
+
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="card has-background-white-bis mx-2">
-                <div class="card-image">
-                    <figure class="image">
-                        <img class="img-card" style="width: 420px; height: 300px;"
-                             src="{% static 'img/rooms/semi-luxe-1.jpg' %}" alt="Placeholder image">
-                    </figure>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <p class="title is-size-4">
-                            <strong>
-                                Disease detection, check
-                                up in the laboratory
-                            </strong>
-                        </p>
-                        <p class="subtitle is-size-5">
-                            In this case, the role of the health laboratory is very important to do
-                            a disease detection...
-                        </p>
-                        <button class="button is-rounded is-outlined is-dark">
-                            read more<img style="padding-left: 10px" class="arrow has-text-success"
-                                          src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}" alt="->">
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card has-background-white-bis mx-2">
-                <div class="card-image">
-                    <figure class="image">
-                        <img class="img-card" style="width: 420px; height: 300px;"
-                             src="{% static 'img/rooms/semi-luxe-1.jpg' %}" alt="Placeholder image">
-                    </figure>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <p class="title is-size-4">
-                            <strong>
-                                Disease detection, check
-                                up in the laboratory
-                            </strong>
-                        </p>
-                        <p class="subtitle is-size-5">
-                            In this case, the role of the health laboratory is very important to do
-                            a disease detection...
-                        </p>
-                        <button class="button is-rounded is-outlined is-dark">
-                            read more<img style="padding-left: 10px" class="arrow has-text-success"
-                                          src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}" alt="->">
-                        </button>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </section>
     <!-- end-card-room -->
 
     <!-- service -->
-   <section class="section" data-section="#">
+    <section class="section" data-section="#">
         <div class="h2 has-text-centered">Services</div>
         <div class="columns-service has-text-centered">
             <div class="column-service">
@@ -159,7 +109,7 @@
     </div>
 
 
-      <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
