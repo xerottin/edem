@@ -1,5 +1,5 @@
+from .models import Course, Photo
 from django.shortcuts import render
-from .models import Course
 
 
 # Create your views here.
@@ -11,7 +11,10 @@ def index(request):
 
 
 def rooms(request, pk):
+    obj = Photo.objects.get(pk=4)
+    image_paths = obj.get_images()
     course = Course.objects.get(pk=pk)
     return render(request, 'rooms.html', {
         'course': course,
+        'image_paths': image_paths
     })

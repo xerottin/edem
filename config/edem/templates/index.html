@@ -25,7 +25,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <img class="img-card" style="width: 420px; height: 300px;"
-                                 src="{% static 'img/rooms/semi-luxe-1.jpg' %}" alt="Placeholder image">
+                                 src="{{ course.img.url }}" alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
@@ -38,12 +38,12 @@
                             <p class="subtitle is-size-5">
                                 {{ course.description }}
                             </p>
-                            <button class="button is-rounded is-outlined is-dark"><a
-                                    href="{% url 'edem:rooms' course.pk %}">
-
-                                read more<img style="padding-left: 10px" class="arrow has-text-success"
-                                                  src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}"
-                                                  alt="->">
+                            <button class="button is-rounded is-outlined"><a
+                                    href="{% url 'edem:rooms' course.pk %}"
+                                    style="text-decoration: none; color: black">read more<img style="padding-left: 10px"
+                                                                                              class="arrow has-text-dark"
+                                                                                              src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}"
+                                                                                              alt="->">
                             </a>
 
                             </button>
