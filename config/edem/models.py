@@ -13,18 +13,8 @@ class Course(models.Model):
 
 
 class Photo(models.Model):
-    product = models.ForeignKey('Course', on_delete=models.CASCADE)
-    # Другие поля вашего изображения
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='uploads/')
 
-    image1 = models.ImageField(upload_to='uploads/')
-    image2 = models.ImageField(upload_to='uploads/')
-    image3 = models.ImageField(upload_to='uploads/')
-    image4 = models.ImageField(upload_to='uploads/')
-    image5 = models.ImageField(upload_to='uploads/')
-    image6 = models.ImageField(upload_to='uploads/')
-    image7 = models.ImageField(upload_to='uploads/')
-    image8 = models.ImageField(upload_to='uploads/')
-
-    def get_images(self):
-        return [self.image1.url, self.image2.url, self.image3.url, self.image4.url, self.image5.url, self.image6.url,
-                self.image7.url, self.image8.url, ]
+    def __str__(self):
+        return f"Image for {self.course.title}"

@@ -1,5 +1,6 @@
+from django.shortcuts import render, get_object_or_404
 from .models import Course, Photo
-from django.shortcuts import render
+from .forms import PhotoForm
 
 
 # Create your views here.
@@ -11,10 +12,20 @@ def index(request):
 
 
 def rooms(request, pk):
-    obj = Photo.objects.get(pk=4)
-    image_paths = obj.get_images()
-    course = Course.objects.get(pk=pk)
+    course = get_object_or_404(Course, pk=pk)
+    photos = Photo.objects.filter(course=course)
+
+    if request.method == 'POST':
+        form = PhotoForm(request.POST, request.FILES)
+        if form.is_valid():
+            photo = form.save(commit=False)
+            photo.course = course
+            photo.save()
+    else:
+        form = PhotoForm()
+
     return render(request, 'rooms.html', {
         'course': course,
-        'image_paths': image_paths
+        'photos': photos,
+        'form': form,
     })
