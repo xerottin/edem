@@ -29,3 +29,7 @@ def rooms(request, pk):
         'photos': photos,
         'form': form,
     })
+
+
+def album(request):
+    return render(request, 'album.html')

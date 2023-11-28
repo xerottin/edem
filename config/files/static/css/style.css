@@ -220,3 +220,18 @@
 
 
 
+/*album-start*/
+
+
+.album{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.album-img-1{
+    image-resolution: revert;
+}
+
+
+/*album-end*/

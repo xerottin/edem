@@ -21,7 +21,8 @@
                                      alt="">SEARCH
             </div>
         </div>
-        <div style="margin-left: 120px" class="logo"><a href="#"><img src="{% static 'img/icons/logopaint.png' %}" alt="logo"></a></div>
+        <div style="margin-left: 120px" class="logo"><a href="#"><img src="{% static 'img/icons/logopaint.png' %}"
+                                                                      alt="logo"></a></div>
         <div class="head-end">
             <div class="head-contacts">
                 <img src="{% static 'img/icons/call-outline.svg' %}" class="call" alt="">
@@ -31,16 +32,25 @@
                         <p>+999999999999</p>
                     </div>
                 </div>
-                <div class="button is-black is-outlined is-size-5">Booking</div>
+                <a href="https://t.me/Edem8686">
+                    <div class="button is-black is-outlined is-size-5">Booking</div>
+                </a>
             </div>
         </div>
     </div>
     <nav style="text-decoration: none" class="navbar has-background-white-bis is-justify-content-space-around">
-        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href="{% url 'edem:index' %}" class="has-text-black">Home</a></strong></div>
-        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href="" class="has-text-black">About</a></strong></div>
-        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href="" class="has-text-black">Rooms</a></strong></div>
-        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href="" class="has-text-black">Service</a></strong></div>
-        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href="" class="has-text-black">Contact-us</a></strong></div>
+        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href="{% url 'edem:index' %}"
+                                                     class="has-text-black">Home</a></strong></div>
+        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href=""
+                                                     class="has-text-black">About</a></strong></div>
+        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href=""
+                                                     class="has-text-black">Rooms</a></strong></div>
+        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href=""
+                                                     class="has-text-black">Album</a></strong></div>
+        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href="{% url 'edem:album' %}"
+                                                     class="has-text-black">Service</a></strong></div>
+        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href=""
+                                                     class="has-text-black">Contact-us</a></strong></div>
     </nav>
 </section>
 {% block content %}
@@ -91,8 +101,9 @@
         <div class="column-niz-inst">
             <a href=""><img src="{% static 'img/icons/logo-facebook.svg' %}" style="width: 30px;height: 30px;"
                             alt=""></a>
-            <a href=""><img src="{% static 'img/icons/logo-instagram.svg' %}" style="width: 30px;height: 30px;"
-                            alt=""></a>
+            <a href="https://www.instagram.com/edemplaza/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img
+                    src="{% static 'img/icons/logo-instagram.svg' %}" style="width: 30px;height: 30px;"
+                    alt=""></a>
         </div>
         <div class="column-niz">
             <img src="{% static 'img/icons/pin-outline.svg' %}" alt="">
@@ -100,7 +111,8 @@
                 doloribus.</p>
         </div>
         <div class="column-niz">
-            <img src="{% static 'img/icons/logo-removebg-preview.png' %}" style="height: 100px;width: 200px; margin-bottom: 20px"
+            <img src="{% static 'img/icons/logo-removebg-preview.png' %}"
+                 style="height: 100px;width: 200px; margin-bottom: 20px"
                  alt="">
         </div>
     </div>
