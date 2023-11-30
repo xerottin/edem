@@ -4,20 +4,31 @@
 
     <!-- information -->
     <img src="{% static 'img/icons/main4.jpg' %}" alt="EDEM">
-    <section class="section" id="top" data-section="#">
-        <div class="is-size-3 has-text-centered">Welcome to Bukhara</div>
-        <h1 class="has-text-centered"><strong style="color: #987d49">HOTEL EDEM PLAZA</strong></h1>
-        <div class="p has-text-centered has-text-black is-size-4">Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Amet
-            ducimus eos est harum incidunt ipsa nobis
-            obcaecati! Animi cum deserunt distinctio eligendi et itaque, nostrum obcaecati odit quasi qui quod ratione
-            soluta suscipit velit voluptate voluptatem voluptatum! Exercitationem, provident quo.
+    <section class="section" id="Section1" data-section="#">
+        <div class="is-size-3 has-text-centered">Добро пожаловать в Бухару</div>
+        <h1 class="has-text-centered"><strong style="color: #987d49">Отель ЭДЕМ ПЛАЗА</strong></h1>
+        <div class="p has-text-centered has-text-black is-size-4">
+            Самый роскошный отель Бухарской области <strong>EDEM PLAZA</strong> расположен в самом сердце сказочно красивого города Бухары.
+            Архитектура отеля черпает вдохновение из Бухары, часть которой несет в себе элементы европейской, а другая
+            часть восточной архитектуры.
+            Отель представляет Вам неограниченные возможности для проживания и отдыха, которые останутся в Ваших
+            впечатлениях как незабываемое путешествие во времени между современностью и средневековьем.
+            Великолепие ждет вас в <strong>EDEM PLAZA</strong>, включающем в себя 23 номера различной концепции, среди которых 11
+            двухместных номеров, 8 трехместных номеров и 4 люкса.
+            Там вы сможете окунуться в волшебный мир ритуалов по уходу за красотой и здоровьем, сочетающих в себе лучшие
+            традиции, опыт и философию стран Восточной Азии.
+            Кроме того, вы сможете круглосуточно наслаждаться вкусными блюдами в безупречной атмосфере нашего ресторана.
+            От экзотики Дальнего Востока до классического шика европейской и азиатской кухни – к вашим услугам. Вы также
+            можете перекусить и попробовать вкусно приготовленные, с изысканной подачей блюда, не выходя из уютной
+            роскоши своего номера.
+            Кроме того, в отеле есть летний бар, где можно расслабиться и полюбоваться панорамой части старого
+            великолепного города Бухары.
         </div>
     </section>
     <!-- end-informatiion -->
 
     <!-- card-rooms -->
-    <section class="section" data-section="#">
+    <section id="Section2" class="section" data-section="#">
         <div class="columns is-justify-content-space-around">
 
             {% for course in courses %}
@@ -36,11 +47,11 @@
                                 </strong>
                             </p>
                             <p class="subtitle is-size-5">
-                                {{ course.description }}
+                                {{ course.snippet }}
                             </p>
                             <button class="button is-rounded is-outlined"><a
                                     href="{% url 'edem:rooms' course.pk %}"
-                                    style="text-decoration: none; color: black">read more<img style="padding-left: 10px"
+                                    style="text-decoration: none; color: black">читать далше<img style="padding-left: 10px"
                                                                                               class="arrow has-text-dark"
                                                                                               src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}"
                                                                                               alt="->">
@@ -56,16 +67,16 @@
     <!-- end-card-room -->
 
     <!-- service -->
-    <section class="section" data-section="#">
-        <div class="h2 has-text-centered">Services</div>
+    <section id="Section3" class="section" data-section="#">
+        <div class="h2 has-text-centered">Сервис</div>
         <div class="columns-service has-text-centered">
             <div class="column-service">
                 <img class="service-img" src="{% static 'img/icons/parking.png' %}" alt="">
-                <div class="p">Parking</div>
+                <div class="p">Парковка</div>
             </div>
             <div class="column-service">
                 <img class="service-img" src="{% static 'img/icons/brakfast.png' %}" alt="">
-                <div class="p">Breakfast</div>
+                <div class="p">Завтрок</div>
             </div>
             <div class="column-service">
                 <img class="service-img" src="{% static 'img/icons/wifi.png' %}" alt="">
@@ -73,11 +84,11 @@
             </div>
             <div class="column-service">
                 <img class="service-img" src="{% static 'img/icons/cleam.png' %}" alt="">
-                <div class="p">Cleaning room</div>
+                <div class="p">Чистка комнат</div>
             </div>
             <div class="column-service">
                 <img class="service-img" style="width: 130px;" src="{% static 'img/icons/24_clock.png' %}" alt="">
-                <div class="p">Work whole day</div>
+                <div class="p">Работаем кругло суточно</div>
             </div>
         </div>
     </section>
@@ -89,13 +100,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-bloc" src="{% static 'img/rooms/semi-luxe-2.jpg' %}" alt="First slide">
+                <img class="d-bloc" src="{% static 'img/album/album-1.jpg' %}" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-bloc" src="{% static 'img/rooms/standart-1.jpg' %}" alt="Second slide">
+                <img class="d-bloc" src="{% static 'img/album/album-6.jpg' %}" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-bloc" src="{% static 'img/rooms/luxe-1.jpg' %}" alt="Third slide">
+                <img class="d-bloc" src="{% static 'img/album/album-4.jpg' %}" alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -124,8 +135,8 @@
     <!--carousel-end-->
 
     <!-- comments -->
-    <section class="section" data-section="#">
-        <div class="h1 has-text-centered mb-5" style="margin-bottom: -30px;"><strong>Reviews from guests</strong></div>
+    <section class="section" id="Section4" data-section="#">
+        <div class="h1 has-text-centered mb-5" style="margin-bottom: -30px;"><strong>Отзывы от гостей</strong></div>
         <div class="columns-comment mx-5">
             <div class="card-comment mx-3">
                 <div class="card-h6 mx-5">Улугбек</div>

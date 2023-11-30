@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -13,45 +13,64 @@
 </head>
 
 <body>
+
 <section>
+
     <div class="header">
         <div class="header-start">
-            <div class="header-lang">ENG</div>
-            <div class="search"><img src="{% static 'img/icons/search-outline.svg' %}" style="width: 30px;height: 30px;"
-                                     alt="">SEARCH
-            </div>
+{#            <div class="header-lang">RU</div>#}
+            {% if button == True %}
+                <a href="{% url 'edem:index' %}">
+                    <div class="button nav-button is-outlined is-black">Назад</div>
+                </a>
+            {% endif %}
         </div>
-        <div style="margin-left: 120px" class="logo"><a href="#"><img src="{% static 'img/icons/logopaint.png' %}"
-                                                                      alt="logo"></a></div>
+        <div style="margin-left: 120px" class="logo"><a href="{% url 'edem:index' %}"><img
+                src="{% static 'img/icons/logopaint.png' %}"
+                alt="logo"></a></div>
         <div class="head-end">
             <div class="head-contacts">
                 <img src="{% static 'img/icons/call-outline.svg' %}" class="call" alt="">
                 <div class="contacts">
-                    <p>Contact-us</p>
+                    <p>Связаться с нами</p>
                     <div class="" style="margin: -18px 20px 0 0">
-                        <p>+999999999999</p>
+                        <p>+99865 223-86-86</p>
                     </div>
                 </div>
                 <a href="https://t.me/Edem8686">
-                    <div class="button is-black is-outlined is-size-5">Booking</div>
+                    <div class="button is-black is-outlined is-size-6">Бронировать</div>
                 </a>
             </div>
         </div>
     </div>
-    <nav style="text-decoration: none" class="navbar has-background-white-bis is-justify-content-space-around">
-        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href="{% url 'edem:index' %}"
-                                                     class="has-text-black">Home</a></strong></div>
-        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href=""
-                                                     class="has-text-black">About</a></strong></div>
-        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href=""
-                                                     class="has-text-black">Rooms</a></strong></div>
-        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href=""
-                                                     class="has-text-black">Album</a></strong></div>
-        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href="{% url 'edem:album' %}"
-                                                     class="has-text-black">Service</a></strong></div>
-        <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href=""
-                                                     class="has-text-black">Contact-us</a></strong></div>
-    </nav>
+
+
+
+    {% if is_succes == True %}
+        <nav style="text-decoration: none" class="navbar has-background-white-bis is-justify-content-space-around">
+            <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href="{% url 'edem:index' %}"
+                                                         class="has-text-black">ГЛАВНАЯ</a></strong></div>
+            <div onclick="scrollToSection('Section1')" class="nav-button is-size-5"><strong><a
+                    style="text-decoration:none;"
+                    class="has-text-black">О
+                ГОСТИНИЦЕ</a></strong></div>
+            <div onclick="scrollToSection('Section2')" class="nav-button is-size-5"><strong><a
+                    style="text-decoration:none;"
+                    class="has-text-black">КОМНАТЫ</a></strong>
+            </div>
+            <div class="nav-button is-size-5"><strong><a style="text-decoration:none;" href="{% url 'edem:album' %}"
+                                                         class="has-text-black">ФОТОГАЛЕРЕЯ</a></strong></div>
+            <div onclick="scrollToSection('Section3')" class="nav-button is-size-5"><strong><a
+                    style="text-decoration:none;"
+                    class="has-text-black">СЕРВИС</a></strong>
+            </div>
+            <div onclick="scrollToSection('Section6')" class="nav-button is-size-5"><strong><a
+                    style="text-decoration:none;"
+                    class="has-text-black">КОНТАКТЫ</a></strong>
+            </div>
+        </nav>
+    {% endif %}
+
 </section>
 {% block content %}
 {% endblock %}
@@ -59,7 +78,7 @@
 
 
 <!-- map -->
-<section data-section="#">
+<section data-section="#" id="Section5">
     <div class="map" style="margin-bottom: -5px">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391.13252974047253!2d64.4309567463635!3d39.7728837630255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f500607f10f60c3%3A0x4cff0a6c9cf2caae!2sEDEM%20PLAZA!5e0!3m2!1sru!2s!4v1697896822718!5m2!1sru!2s"
                 width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
@@ -70,54 +89,66 @@
 
 <!-- footer-start -->
 <div class="footer" style="padding: 30px 0 10px;">
-    <h3 class="title is-size-4" style="padding-left: 70px">Contact-us</h3>
+    <h3 class="title is-size-4" style="padding-left: 70px">Наши контакты</h3>
     <div class="columns-footer">
         <div class="column-footer">
-            <img style="width: 30px;height: 30px;" src="{% static 'img/icons/navigate-circle-outline.svg' %}"
+            <img style="width: 30px;height: 30px; margin: 15px 10px 0 0"
+                 src="{% static 'img/icons/navigate-circle-outline.svg' %}"
                  alt="">
-            <p class="p footer-text is-size-5">Bukhara \n Bovadin str. </p>
+            <p class="p footer-text is-size-5">200100 | Bukhara city | Uzbekistan <br> Islom Karimov </p>
         </div>
         <div class="column-footer">
             <img src="{% static 'img/icons/call-outline.svg' %}" style="width: 30px; height: 30px;" alt="">
-            <p class="p is-size-5"><strong>+999999999999</strong></p>
+            <p class="p is-size-5"><strong>+99865 223-86-86</strong></p>
         </div>
         <div class="column-footer">
             <img src="{% static 'img/icons/chatbox-outline.svg' %}" style="width: 30px;height: 30px;" alt="">
-            <p class="p is-size-5">edemplaza@mail.com</p>
+            <p class="p is-size-5"> edemplaza@mail.com</p>
         </div>
     </div>
 </div>
-
-<div class="niz">
-    <div class="columns-niz">
-        <div class="column-niz">
-            <img src="{% static 'img/icons/business-outline.svg' %}"
-                 style="width: 50px;height: 50px; padding-right: 14px;" alt="">
-            <div class="">
-                <h2 style="color: black">HOTEL EDEM PLAZA</h2>
-                <p style="color: black">2023, official web-site</p>
+<section id="Section6">
+    <div class="niz">
+        <div class="columns-niz">
+            <div class="column-niz">
+                <img src="{% static 'img/icons/business-outline.svg' %}"
+                     style="width: 50px;height: 50px; padding-right: 14px;" alt="">
+                <div class="">
+                    <h2 style="color: black">HOTEL EDEM PLAZA</h2>
+                    <p style="color: black">2023, official web-site</p>
+                </div>
+            </div>
+            <div class="column-niz-inst">
+                <a href=""><img src="{% static 'img/icons/logo-facebook.svg' %}" style="width: 30px;height: 30px;"
+                                alt=""></a>
+                <a href="https://www.instagram.com/edemplaza/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img
+                        src="{% static 'img/icons/logo-instagram.svg' %}" style="width: 30px;height: 30px;"
+                        alt=""></a>
+            </div>
+            <div class="column-niz">
+                <img src="{% static 'img/icons/pin-outline.svg' %}" alt="">
+                <p style="font-size: 20px; color: #000000">С радостью ждём вас всех</p>
+            </div>
+            <div class="column-niz">
+                <img src="{% static 'img/icons/logo-removebg-preview.png' %}"
+                     style="height: 100px;width: 200px; margin-bottom: 20px"
+                     alt="">
             </div>
         </div>
-        <div class="column-niz-inst">
-            <a href=""><img src="{% static 'img/icons/logo-facebook.svg' %}" style="width: 30px;height: 30px;"
-                            alt=""></a>
-            <a href="https://www.instagram.com/edemplaza/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img
-                    src="{% static 'img/icons/logo-instagram.svg' %}" style="width: 30px;height: 30px;"
-                    alt=""></a>
-        </div>
-        <div class="column-niz">
-            <img src="{% static 'img/icons/pin-outline.svg' %}" alt="">
-            <p style="font-size: 20px; color: #000000">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,
-                doloribus.</p>
-        </div>
-        <div class="column-niz">
-            <img src="{% static 'img/icons/logo-removebg-preview.png' %}"
-                 style="height: 100px;width: 200px; margin-bottom: 20px"
-                 alt="">
-        </div>
     </div>
-</div>
+</section>
 <!-- footer-end -->
+{#for-section-start#}
+<script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({behavior: 'smooth'});
+    }
+</script>
+{#for-section-end#}
+
+
+
 
 </body>
 

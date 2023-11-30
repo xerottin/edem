@@ -11,6 +11,9 @@ class Course(models.Model):
     def __str__(self):
         return self.title
 
+    def snippet(self):
+        return self.description[:120] + ' ...'
+
 
 class Photo(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)

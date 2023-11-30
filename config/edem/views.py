@@ -5,13 +5,19 @@ from .forms import PhotoForm
 
 # Create your views here.
 def index(request):
+    button = False
+    is_succes = True
     courses = Course.objects.all()
     return render(request, 'index.html', {
+        'button': button,
+        'is_succes': is_succes,
         'courses': courses,
     })
 
 
 def rooms(request, pk):
+    button = True
+    is_succes = False
     course = get_object_or_404(Course, pk=pk)
     photos = Photo.objects.filter(course=course)
 
@@ -25,6 +31,8 @@ def rooms(request, pk):
         form = PhotoForm()
 
     return render(request, 'rooms.html', {
+        'button': button,
+        'is_succes': is_succes,
         'course': course,
         'photos': photos,
         'form': form,
@@ -32,4 +40,10 @@ def rooms(request, pk):
 
 
 def album(request):
-    return render(request, 'album.html')
+    button = True
+    is_succes = False
+    return render(request, 'album.html',
+                  {
+                      'is_succes': is_succes,
+                      'button': button,
+                  })

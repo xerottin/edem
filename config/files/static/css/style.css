@@ -4,7 +4,9 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
+
 
 .header {
     padding: 0 50px;
@@ -173,16 +175,17 @@
     font-size: 30px;
     margin-bottom: 15px;
 }
-.uslugi{
+
+.uslugi {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.main-room, .bathroom{
+
+.main-room, .bathroom {
     width: 300px;
     align-content: space-evenly;
 }
-
 
 
 .li {
@@ -191,11 +194,12 @@
 }
 
 .room-p {
-    margin: 50px 0 30px ;
+    margin: 50px 0 30px;
     font-size: 25px;
     text-indent: 40px;
 }
-.photos-of-room{
+
+.photos-of-room {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -203,34 +207,45 @@
     justify-content: space-around;
 }
 
-.room-1{
+.room-1 {
     width: 30%;
     height: 300px;
     margin: 10px;
 }
-.p-room{
+
+.p-room {
     margin-top: 40px;
     height: 220px;
     font-size: 40px;
     text-align: center;
- }
+}
 
 
 /*room.html-end*/
 
 
-
 /*album-start*/
 
-
-.album{
+.section-album {
     width: 80%;
-    height: auto;
     margin: 0 auto;
 }
 
-.album-img-1{
-    image-resolution: revert;
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    width: 70%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    height: auto;
+
+}
+
+.album-img {
+    width: 45%;
+    height: 300px;
+    margin: 15px 5px;
 }
 
 

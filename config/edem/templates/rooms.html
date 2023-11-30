@@ -9,11 +9,11 @@
                 <img class="room-1" src="{{ photo.image.url }}" alt="{{ course.title }} Image">
             {% endfor %}
 
-{#            <form method="post" enctype="multipart/form-data">#}
-{#                {% csrf_token %}#}
-{#                {{ form.as_p }}#}
-{#                <button type="submit">Добавить фото</button>#}
-{#            </form>#}
+            {#            <form method="post" enctype="multipart/form-data">#}
+            {#                {% csrf_token %}#}
+            {#                {{ form.as_p }}#}
+            {#                <button type="submit">Добавить фото</button>#}
+            {#            </form>#}
         </div>
         <div class="room-h1">Информация о номере</div>
         <div class="uslugi">
@@ -63,9 +63,13 @@
 
         <div class="room-p">
             {{ course.description }}
-            <div class="" style="margin-top: 20px">цена: <strong>{{ course.price_uz }}</strong> сумм</div>
-            <div class="" style="margin-top: 20px">цена: <strong>{{ course.price_eu }}</strong> сумм</div>
+            <div class="" style="margin-top: 20px">цена: <strong>{{ course.price_uz }}</strong> сумм для резидентов</div>
+            <div class="" style="margin-top: 20px">цена: <strong>{{ course.price_eu }}</strong> сумм для нерезидентов</div>
         </div>
+        <a href="https://t.me/Edem8686">
+            <div class="button is-black is-outlined is-size-6" style="margin-bottom: 50px">Бронировать</div>
+        </a>
+
     </div>
 
 {% endblock %}
