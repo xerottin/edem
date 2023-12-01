@@ -241,6 +241,11 @@
     height: auto;
 
 }
+.album-img-1{
+    width: 93%;
+    height: 350px;
+    margin: 15px 5px;
+}
 
 .album-img {
     width: 45%;
