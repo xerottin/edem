@@ -7,6 +7,8 @@ class Course(models.Model):
     description = models.TextField()
     price_uz = models.IntegerField()
     price_eu = models.IntegerField()
+    size_room = models.TextField()
+    beds = models.TextField()
 
     def __str__(self):
         return self.title
