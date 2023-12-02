@@ -5,15 +5,17 @@
     <!-- information -->
     <img src="{% static 'img/icons/main4.jpg' %}" alt="EDEM">
     <section class="section" id="Section1" data-section="#">
-        <div class="is-size-3 has-text-centered">Добро пожаловать в Бухару</div>
-        <h1 class="has-text-centered"><strong style="color: #987d49">Отель ЭДЕМ ПЛАЗА</strong></h1>
-        <div class="p has-text-centered has-text-black is-size-4">
-            Самый роскошный отель Бухарской области <strong>EDEM PLAZA</strong> расположен в самом сердце сказочно красивого города Бухары.
+        <div class="is-size-3 has-text-centered mb-3">Добро пожаловать в Бухару</div>
+        <h1 class="has-text-centered mb-3"><strong style="color: #987d49">Отель ЭДЕМ ПЛАЗА</strong></h1>
+        <div class="p-inf has-text-black is-size-4">
+            Самый роскошный отель Бухарской области <strong>EDEM PLAZA</strong> расположен в самом сердце сказочно
+            красивого города Бухары.
             Архитектура отеля черпает вдохновение из Бухары, часть которой несет в себе элементы европейской, а другая
             часть восточной архитектуры.
             Отель представляет Вам неограниченные возможности для проживания и отдыха, которые останутся в Ваших
             впечатлениях как незабываемое путешествие во времени между современностью и средневековьем.
-            Великолепие ждет вас в <strong>EDEM PLAZA</strong>, включающем в себя 23 номера различной концепции, среди которых 11
+            Великолепие ждет вас в <strong>EDEM PLAZA</strong>, включающем в себя 23 номера различной концепции, среди
+            которых 11
             двухместных номеров, 8 трехместных номеров и 4 люкса.
             Там вы сможете окунуться в волшебный мир ритуалов по уходу за красотой и здоровьем, сочетающих в себе лучшие
             традиции, опыт и философию стран Восточной Азии.
@@ -51,10 +53,11 @@
                             </p>
                             <button class="button is-rounded is-outlined"><a
                                     href="{% url 'edem:rooms' course.pk %}"
-                                    style="text-decoration: none; color: black">читать далше<img style="padding-left: 10px"
-                                                                                              class="arrow has-text-dark"
-                                                                                              src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}"
-                                                                                              alt="->">
+                                    style="text-decoration: none; color: black">читать далше<img
+                                    style="padding-left: 10px"
+                                    class="arrow has-text-dark"
+                                    src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}"
+                                    alt="->">
                             </a>
 
                             </button>
@@ -87,6 +90,10 @@
                 <div class="p">Чистка комнат</div>
             </div>
             <div class="column-service">
+                <img class="service-img" style="width: 110px;" src="{% static 'img/icons/soap (1).png' %}" alt="">
+                <div class="p">Женский салон</div>
+            </div>
+            <div class="column-service">
                 <img class="service-img" style="width: 130px;" src="{% static 'img/icons/24_clock.png' %}" alt="">
                 <div class="p">Работаем кругло суточно</div>
             </div>
@@ -100,13 +107,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-bloc" src="{% static 'img/album/album-1.jpg' %}" alt="First slide">
+                <img class="d-bloc" src="{% static 'img/album/album-14.jpg' %}" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-bloc" src="{% static 'img/album/album-6.jpg' %}" alt="Second slide">
+                <img class="d-bloc" src="{% static 'img/album/album-15.jpg' %}" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-bloc" src="{% static 'img/album/album-4.jpg' %}" alt="Third slide">
+                <img class="d-bloc" src="{% static 'img/album/album-16.jpg' %}" alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -136,7 +143,7 @@
 
     <!-- comments -->
     <section class="section" id="Section4" data-section="#">
-        <div class="h1 has-text-centered mb-5" style="margin-bottom: -30px;"><strong>Отзывы от гостей</strong></div>
+        <div class="h1 has-text-centered mt-6 " style="margin-bottom: -30px;"><strong>Отзывы от гостей</strong></div>
         <div class="columns-comment mx-5">
             <div class="card-comment mx-3">
                 <div class="card-h6 mx-5">Улугбек</div>

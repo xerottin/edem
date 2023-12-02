@@ -18,7 +18,7 @@
 
     <div class="header">
         <div class="header-start">
-{#            <div class="header-lang">RU</div>#}
+            {#            <div class="header-lang">RU</div>#}
             {% if button == True %}
                 <a href="{% url 'edem:index' %}">
                     <div class="button nav-button is-outlined is-black">Назад</div>
@@ -119,20 +119,18 @@
                 </div>
             </div>
             <div class="column-niz-inst">
+                <img src="{% static 'img/icons/logo-removebg-preview.png' %}"
+                     style="height: 120px;width: 250px; margin-bottom: 20px"
+                     alt="">
+
+            </div>
+            <div class="column-niz has-text-centered">
+                <p style="font-size: 20px; color: #000000">С РАДОСТЬЮ ЖДЁМ ВАС ВСЕХ</p>
                 <a href=""><img src="{% static 'img/icons/logo-facebook.svg' %}" style="width: 30px;height: 30px;"
                                 alt=""></a>
                 <a href="https://www.instagram.com/edemplaza/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img
                         src="{% static 'img/icons/logo-instagram.svg' %}" style="width: 30px;height: 30px;"
                         alt=""></a>
-            </div>
-            <div class="column-niz">
-                <img src="{% static 'img/icons/pin-outline.svg' %}" alt="">
-                <p style="font-size: 20px; color: #000000">С радостью ждём вас всех</p>
-            </div>
-            <div class="column-niz">
-                <img src="{% static 'img/icons/logo-removebg-preview.png' %}"
-                     style="height: 100px;width: 200px; margin-bottom: 20px"
-                     alt="">
             </div>
         </div>
     </div>
@@ -146,8 +144,6 @@
     }
 </script>
 {#for-section-end#}
-
-
 
 
 </body>

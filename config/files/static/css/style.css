@@ -47,6 +47,16 @@
     padding-top: 10px;
 }
 
+/*/info-start*/
+.p-inf {
+    display: flow;
+    text-indent: 40px;
+}
+
+
+/*/info-end*/
+
+
 /*card*/
 .card {
     width: 420px;
@@ -85,10 +95,6 @@
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
-}
-
-.column-niz {
-    display: flex;
 }
 
 
@@ -131,7 +137,7 @@
     margin-top: 70px;
     height: 250px;
     width: 30%;
-    box-shadow: 10px 10px lightblue;
+    box-shadow: 10px 10px rgba(47, 60, 65, 0.75);
 
 }
 
@@ -241,9 +247,10 @@
     height: auto;
 
 }
-.album-img-1{
+
+.album-img-1 {
     width: 93%;
-    height: 350px;
+    height: 450px;
     margin: 15px 5px;
 }
 
