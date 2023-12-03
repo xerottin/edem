@@ -47,18 +47,18 @@
                                     {{ course.title }}
                                 </strong>
                             </p>
-                            <p class="subtitle is-size-5">
+                            <p class=" p-course subtitle is-size-6">
                                 {{ course.snippet }}
                             </p>
-                            <button class="button is-rounded is-outlined"><a
-                                    href="{% url 'edem:rooms' course.pk %}"
-                                    style="text-decoration: none; color: black">читать далше<img
-                                    style="padding-left: 10px"
-                                    class="arrow has-text-dark"
-                                    src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}"
-                                    alt="->">
-                            </a>
 
+                            <button class="button is-outlined is-size-6"><a href="{% url 'edem:rooms' course.pk %}"
+                                                                                 style="color: black">
+                            </a>
+                                читать далше <img
+                                        style="padding-left: 10px"
+                                        class="arrow has-text-dark"
+                                        src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}"
+                                        alt="->">
                             </button>
                         </div>
                     </div>
@@ -145,34 +145,37 @@
         <div class="h1 has-text-centered mt-6 " style="margin-bottom: -30px;"><strong>Отзывы от гостей</strong></div>
         <div class="columns-comment mx-5">
             <div class="card-comment mx-3">
-                <div class="card-h6 mx-5">Улугбек</div>
-                <div class="card-p mx-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eum
+                <div class="card-h6 is-5 mx-5">Улугбек</div>
+                <div class="card-p is-6 mx-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eum
                     exercitationem obcaecati ullam. Veniam qui debitis harum, eius excepturi maiores.
                 </div>
             </div>
             <div class="card-comment mx-3">
-                <div class="card-h6 mx-5">Jones</div>
-                <div class="card-p mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum, perferendis
+                <div class="card-h6 is-5 mx-5">Jones</div>
+                <div class="card-p  is-6 mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+                    perferendis
                     vero inventore autem at odit ducimus reiciendis ipsa alias! Sint reiciendis deleniti quia rerum
                     facere consequatur esse animi ea eveniet amet! Omnis illum vero quidem ipsam ex consequuntur
                     facilis.
                 </div>
             </div>
             <div class="card-comment mx-3">
-                <div class="card-h6 mx-5">Camila</div>
-                <div class="card-p mx-3">Lorem ipsum dolor sit amet.</div>
+                <div class="card-h6 is-5 mx-5">Camila</div>
+                <div class="card-p is-6 mx-3">Lorem ipsum dolor sit amet.</div>
             </div>
             <div class="card-comment mx-3">
-                <div class="card-h6 mx-5">Jones</div>
-                <div class="card-p mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum, perferendis
+                <div class="card-h6 is-5 mx-5">Jones</div>
+                <div class="card-p is-6 mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+                    perferendis
                     vero inventore autem at odit ducimus reiciendis ipsa alias! Sint reiciendis deleniti quia rerum
                     facere consequatur esse animi ea eveniet amet! Omnis illum vero quidem ipsam ex consequuntur
                     facilis.
                 </div>
             </div>
             <div class="card-comment mx-3">
-                <div class="card-h6 mx-5">Jones</div>
-                <div class="card-p mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum, perferendis
+                <div class="card-h6 is-5 mx-5">Jones</div>
+                <div class="card-p p is-6 mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+                    perferendis
                     vero inventore autem at odit ducimus reiciendis ipsa alias! Sint reiciendis deleniti quia rerum
                     facere consequatur esse animi ea eveniet amet! Omnis illum vero quidem ipsam ex consequuntur
                     facilis.
