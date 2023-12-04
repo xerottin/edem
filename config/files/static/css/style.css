@@ -8,8 +8,6 @@
 }
 
 
-
-
 .header {
     padding: 0 50px;
     display: flex;
@@ -103,9 +101,9 @@
 /*carousel-start*/
 
 .d-bloc {
-    margin-left: 350px;
+    margin-left: 290px;
     display: flex;
-    width: 70%;
+    width: 60%;
     height: 400px;
 }
 
@@ -115,7 +113,7 @@
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    outline: #00b89c;
+        outline: rgba(47, 60, 65, 0.75);
     border-radius: 50%;
     border: 5px solid #00b89c;
 
@@ -267,11 +265,9 @@
 /*album-end*/
 
 
-
-
 /*media-screen*/
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .contacts{
         font-size: 12px;
     }
@@ -279,7 +275,7 @@
         width: 100%;
     }
     .d-bloc{
-        margin-left: 130px;
+        margin-left: 220px;
     }
 }
 
