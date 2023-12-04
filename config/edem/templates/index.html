@@ -50,15 +50,16 @@
                             <p class=" p-course subtitle is-size-6">
                                 {{ course.snippet }}
                             </p>
+                            
 
                             <button class="button is-outlined is-size-6"><a href="{% url 'edem:rooms' course.pk %}"
-                                                                                 style="color: black">
-                            </a>
+                                                                            style="text-decoration: none;color: black">
                                 читать далше <img
-                                        style="padding-left: 10px"
-                                        class="arrow has-text-dark"
-                                        src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}"
-                                        alt="->">
+                                    style="padding-left: 10px"
+                                    class="arrow has-text-dark"
+                                    src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}"
+                                    alt="->">
+                            </a>
                             </button>
                         </div>
                     </div>
