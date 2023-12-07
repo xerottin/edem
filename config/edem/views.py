@@ -3,7 +3,6 @@ from .models import Course, Photo
 from .forms import PhotoForm
 
 
-# Create your views here.
 def index(request):
     button = False
     is_succes = True
@@ -42,8 +41,7 @@ def rooms(request, pk):
 def album(request):
     button = True
     is_succes = False
-    return render(request, 'album.html',
-                  {
-                      'is_succes': is_succes,
-                      'button': button,
-                  })
+    return render(request, 'album.html', {
+        'is_succes': is_succes,
+        'button': button,
+    })

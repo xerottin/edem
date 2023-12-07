@@ -2,6 +2,7 @@
 {% load static %}
 {% block content %}
 
+
     <!-- information -->
     <img src="{% static 'img/icons/main4.jpg' %}" alt="EDEM">
     <section class="section" id="Section1" data-section="#">
@@ -50,7 +51,7 @@
                             <p class=" p-course subtitle is-size-6">
                                 {{ course.snippet }}
                             </p>
-                            
+
 
                             <button class="button is-outlined is-size-6"><a href="{% url 'edem:rooms' course.pk %}"
                                                                             style="text-decoration: none;color: black">
