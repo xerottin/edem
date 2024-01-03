@@ -19,7 +19,7 @@ class Course(models.Model):
 
 class Photo(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='uploads/')
+    image = models.ImageField(default='standart-1.jpg', null=True)
 
     def __str__(self):
         return f"Image for {self.course.title}"

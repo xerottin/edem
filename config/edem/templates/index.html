@@ -6,9 +6,9 @@
     <!-- information -->
     <img src="{% static 'img/icons/main4.jpg' %}" alt="EDEM">
     <section class="section" id="Section1" data-section="#">
-        <div class="is-size-3 has-text-centered mb-3">Добро пожаловать в Бухару</div>
-        <h1 class="has-text-centered mb-3"><strong style="color: #987d49">Отель ЭДЕМ ПЛАЗА</strong></h1>
-        <div class="p-inf has-text-black is-size-4">
+        <div class="h1-info has-text-centered mb-3">Добро пожаловать в Бухару</div>
+        <h1 class=" h2-info has-text-centered mb-3"><strong style="color: #987d49">Отель EDEMPLAZA</strong></h1>
+        <div class="p-inf has-text-black">
             Самый роскошный отель Бухарской области <strong>EDEM PLAZA</strong> расположен в самом сердце сказочно
             красивого города Бухары.
             Архитектура отеля черпает вдохновение из Бухары, часть которой несет в себе элементы европейской, а другая
@@ -32,13 +32,12 @@
     <!-- card-rooms -->
     <section id="Section2" class="section" data-section="#">
         <div class="columns is-justify-content-space-around">
-
             {% for course in courses %}
-                <div class="card has-background-white-bis mx-2">
+                <div class="card has-background-white-bis">
                     <div class="card-image">
                         <figure class="image">
-                            <img class="img-card" style="width: 420px; height: 300px;"
-                                 src="{{ course.img.url }}" alt="Placeholder image">
+                            <img class="img-card"
+                                 src="{{ course.img.url }}" alt="Room image">
                         </figure>
                     </div>
                     <div class="card-content">
@@ -48,18 +47,18 @@
                                     {{ course.title }}
                                 </strong>
                             </p>
-                            <p class=" p-course subtitle is-size-6">
+                            <p class="p-course subtitle">
                                 {{ course.snippet }}
                             </p>
-
-
-                            <button class="button is-outlined is-size-6"><a href="{% url 'edem:rooms' course.pk %}"
-                                                                            style="text-decoration: none;color: black">
-                                читать далше <img
-                                    style="padding-left: 10px"
-                                    class="arrow has-text-dark"
-                                    src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}"
-                                    alt="->">
+                            <button class="button is-outlined is-size-6 mt-4">
+                                <a href="{% url 'edem:rooms' course.pk %}"
+                                   style="text-decoration: none;color: black">
+                                    читать далше
+                                <img
+                                        style="padding-left: 10px"
+                                        class="arrow has-text-dark"
+                                        src="{% static 'img/icons/arrow-forward-circle-outline.svg' %}"
+                                        alt="->">
                             </a>
                             </button>
                         </div>

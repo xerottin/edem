@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -9,19 +10,25 @@
 
 
 .header {
-    padding: 0 50px;
     display: flex;
+    /*flex-wrap: wrap;*/
     justify-content: space-between;
+    padding: 0 50px;
 }
 
 .header-start {
     padding-top: 40px;
-    width: 150px;
+    width: 180px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.inst-fac {
+    width: 45px;
+    height: 45px;
 }
 
 .logo {
+    margin-left: 120px;
     width: 300px;
     height: 150px;
 }
@@ -48,9 +55,18 @@
 }
 
 /*/info-start*/
+.h1-info {
+    font-size: 30px;
+}
+
+.h2-info {
+    font-size: 45px;
+}
+
 .p-inf {
     display: flow;
     text-indent: 40px;
+    font-size: 25px;
 }
 
 
@@ -59,8 +75,13 @@
 
 /*card*/
 .card {
-    width: 430px;
-    height: 560px;
+    width: 380px;
+    height: 580px;
+}
+
+.img-card {
+    width: 100%;
+    height: 300px;
 }
 
 .arrow {
@@ -113,7 +134,7 @@
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-        outline: rgba(47, 60, 65, 0.75);
+    outline: rgba(47, 60, 65, 0.75);
     border-radius: 50%;
     border: 5px solid #00b89c;
 
@@ -153,6 +174,8 @@
 }
 
 /* service */
+
+/* service */
 .columns-service {
     justify-content: space-around;
     display: flex;
@@ -169,7 +192,6 @@
 .service-img {
     padding-bottom: 20px;
 }
-
 
 /*room.html-start*/
 
@@ -262,20 +284,91 @@
 }
 
 
+
+
 /*album-end*/
 
 
 /*media-screen*/
 
 @media only screen and (max-width: 1200px) {
-    .contacts{
-        font-size: 12px;
+    /*base-layput*/
+    .header {
+        height: 150px;
     }
-    .album-img, .album-img-1{
+
+    .inst-fac {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo {
+        margin-left: 200px;
+        position: absolute;
+        width: 180px;
+        padding-top: 20px;
+    }
+
+    .call {
+        padding-top: -10px;
+    }
+
+    .contacts {
+        width: 180px;
+        font-size: 15px;
+    }
+
+    /*base-layput-end*/
+    /*index*/
+    .h1-info {
+        font-size: 35px;
+    }
+
+    .h2-info {
+        font-size: 45px;
+    }
+
+    .p-inf {
+        font-size: 25px;
+    }
+
+    .columns {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .card {
+        height: 650px;
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        margin-top: 30px;
+        transform: translateX(-30%);
+
+    }
+
+    .p-course {
+        font-size: 40px;
+    }
+
+    /*index-end*/
+
+    /*album-img*/
+    .section-album{
+        width: 95%;
+    }
+
+    .album-img, .album-img-1 {
+        height: 400px;
         width: 100%;
     }
-    .d-bloc{
-        margin-left: 220px;
+
+    /*album-img-end*/
+    .d-bloc {
+        width: 70%;
+        margin-left: 150px;
     }
 }
 

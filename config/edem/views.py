@@ -7,11 +7,12 @@ def index(request):
     button = False
     is_succes = True
     courses = Course.objects.all()
-    return render(request, 'index.html', {
-        'button': button,
-        'is_succes': is_succes,
-        'courses': courses,
-    })
+    data = {'title': 'EDEMPLAZA',
+            'button': button,
+            'is_succes': is_succes,
+            'courses': courses,
+            }
+    return render(request, 'index.html', data)
 
 
 def rooms(request, pk):
@@ -30,6 +31,7 @@ def rooms(request, pk):
         form = PhotoForm()
 
     return render(request, 'rooms.html', {
+        'title': 'room',
         'button': button,
         'is_succes': is_succes,
         'course': course,
@@ -42,6 +44,7 @@ def album(request):
     button = True
     is_succes = False
     return render(request, 'album.html', {
+        'title': 'album',
         'is_succes': is_succes,
         'button': button,
     })

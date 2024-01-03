@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{% static 'css/bulma/bulma.min.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Edemplaza</title>
+    <title>{{ title }}</title>
 </head>
 
 <body>
@@ -18,29 +18,32 @@
 
     <div class="header">
         <div class="header-start">
-            {#            <div class="header-lang">RU</div>#}
             {% if button == True %}
                 <a href="{% url 'edem:index' %}">
                     <div class="button nav-button is-outlined is-black">Назад</div>
                 </a>
             {% endif %}
+        {% if button == False %}
+            <a class="inst-fac" href="https://www.instagram.com/edemplaza/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img
+                    src="{% static 'img/icons/logo-instagram.svg' %}" alt="inst"></a>
+            <a class="inst-fac" href="https://www.facebook.com/edem.plaza.5"><img src="{% static 'img/icons/logo-facebook.svg' %}" alt="facebook"></a>
+        {% endif %}
         </div>
-        <div style="margin-left: 120px" class="logo"><a href="{% url 'edem:index' %}"><img
+        <div class="logo"><a href="{% url 'edem:index' %}"><img
                 src="{% static 'img/icons/logopaint.png' %}"
-                alt="logo"></a></div>
-        <div class="head-end">
-            <div class="head-contacts">
-                <img src="{% static 'img/icons/call-outline.svg' %}" class="call" alt="">
-                <div class="contacts">
-                    <p>Связаться с нами</p>
-                    <div class="" style="margin: -18px 20px 0 0">
-                        <p>+99865 223-86-86</p>
-                    </div>
+                alt="logo"></a>
+        </div>
+        <div class="head-contacts">
+            <img src="{% static 'img/icons/call-outline.svg' %}" class="call" alt="">
+            <div class="contacts">
+                <p>Связаться с нами</p>
+                <div class="" style="margin: -18px 20px 0 0">
+                    <p>+99865 223-86-86</p>
                 </div>
-                <a href="https://t.me/Edem8686">
-                    <div class="button is-black is-outlined is-size-6">Бронировать</div>
-                </a>
             </div>
+            <a href="https://t.me/Edem8686">
+                <div class="button is-black is-outlined booking-but">Бронировать</div>
+            </a>
         </div>
     </div>
 
@@ -126,10 +129,11 @@
             </div>
             <div class="column-niz has-text-centered">
                 <p style="font-size: 20px; color: #000000">С РАДОСТЬЮ ЖДЁМ ВАС ВСЕХ</p>
-                <a href=""><img src="{% static 'img/icons/logo-facebook.svg' %}" style="width: 30px;height: 30px;"
-                                alt=""></a>
+                <a href="https://www.facebook.com/edem.plaza.5"><img src="{% static 'img/icons/logo-facebook.svg' %}"
+                                                                     style="width: 45px;height:45px;"
+                                                                     alt=""></a>
                 <a href="https://www.instagram.com/edemplaza/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img
-                        src="{% static 'img/icons/logo-instagram.svg' %}" style="width: 30px;height: 30px;"
+                        src="{% static 'img/icons/logo-instagram.svg' %}" style="width: 45px;height: 45px;"
                         alt=""></a>
             </div>
         </div>
